@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Formulario de actualización de objeto personalizado
+        form(action="/update-cobj" method="post")
+            div
+                label(for="nombre") Nombre
+                input(type="text" name="nombre" required)
+            div
+                label(for="marca") Marca
+                input(type="text" name="marca" required)
+            div
+                label(for="modelo") Modelo
+                input(type="text" name="modelo" required)
+            div
+                button(type="submit") Submit
+        a(href='/') Regresar a la página de inicio
